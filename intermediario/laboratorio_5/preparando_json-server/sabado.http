@@ -1,0 +1,12 @@
+
+
+#GET http://localhost:3000/ordena-janeiro/
+
+
+
+GET http://localhost:3000/ordena-janeiro/
+?comentario_like=Youtube
+
+
+GET http://localhost:3000/ordena-janeiro/
+?comentario_like=ENUM
