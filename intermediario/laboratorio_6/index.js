@@ -63,7 +63,7 @@ function getFiles (dir, files_){
   
 ///////////////////////// Rotas /////////////////////////////
 
-/////////////////////// Colocando de forma dinamica os ENDPOINTS ////
+/////////////////////// Colocando de forma dinâmica os ENDPOINTS ////
 ENDPOINTS();
 
 function ENDPOINTS() {
@@ -100,7 +100,7 @@ function ENDPOINTS() {
 		app.get("/"+element+"/"+element, atendendo_componente);
     });
 
-//Entregando Fotos recen colocadas na paste de NOVOS
+//Entregando Fotos recém colocadas na paste de NOVOS
     app.get("/"+url_FOTOS_novas+"/*/*.png", entregando_novos_png);
     app.get("/novo", lista_fotos_novas);
 
@@ -313,8 +313,6 @@ function atendendo_componente(req, res, next) {
     var dir = path.join(__dirname, local_index);         
 
 	file=dir+"/index.html";
-
-//console.log("etiquetas  entregando_index  "+file);
 
     var type = mime[path.extname(file).slice(1)] || 'text/plain';
     
