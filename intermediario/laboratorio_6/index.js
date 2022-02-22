@@ -5,7 +5,19 @@ var fs = require('fs');
 var querystring = require('querystring');
 const bodyParser = require('body-parser');
 
+const swaggerUi = require('swagger-ui-express');
+const YAML = require('yamljs');
+const swaggerDocument = YAML.load('./swagger.yaml');
+
+
 var app = express();
+
+/**
+ A biblioteca swaggerUi permite uma fácil documentação de APIs. 
+ Neste caso não será usado um basepath
+ */
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -82,9 +94,6 @@ function ENDPOINTS() {
     
     const filesNames = dirents.filter(dirent => dirent.isDirectory()).map(dirent => dirent.name);
 
-
-    
-    
 //Lista de "pastas"
     app.get("/lista_pastas", lista_pastas);
 //Lista de NOVOS
