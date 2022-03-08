@@ -32,7 +32,7 @@ Usando o comando:
 docker-compose build
 ```
 
-Para posteriromente executar o container, usando o comando:
+Para posteriormente executar o container, usando o comando:
 
 ```
 docker-compose up
@@ -60,12 +60,17 @@ Recomendo a leitura de uma detalhada explicação sobre este método de ["Docker
 
 ### Passo 2: adaptando a imagem para o serviço do AWS Lambda:
 
+https://hichaelmart.medium.com/using-container-images-with-aws-lambda-7ffbd23697f1
 
+Lambda handler
 
 ### Passo 3: colocando a image (que será usada pelo lambda AWS) no serviço "ECR AWS":
 
 O serviço [ECR](https://aws.amazon.com/pt/ecr/), da AWS, é o serviço que nos permite armazenar imagens que podem ser usadas como funções lambda AWS.
 
+### Passo 4: criando "manualmente" a função lambda para operar com o container criado (imagem):
+
+https://dashbird.io/blog/deploying-aws-lambda-with-docker/
 
 
 
@@ -74,9 +79,6 @@ O serviço [ECR](https://aws.amazon.com/pt/ecr/), da AWS, é o serviço que nos 
 
 
 
-
-
-### Passo 3: criando "manualmente" a função lambda para operar com o container criado (imagem):
 
 
 /home/julian/Desktop/analisar_PESSADOS/estudos/belo_horizonte/passo_INICIAL
