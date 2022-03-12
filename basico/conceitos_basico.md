@@ -4,6 +4,9 @@ Os primeiros códigos gerados por um futuro "programador NODE" podem ser pequeno
 
 O JS permite fazer muitas coisas em conjunto com o HTML e por isso nossos primeiros laboratórios serão focados no uso do HTML (usando as vantagens estéticas do BootStrap 5) para ilustrar o poder de simples códigos de JS.
 
+Professores Convidados:
+
+https://github.com/DianaMartine/nodeJs-liveCoding-DIO/
 
 
 
